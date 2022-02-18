@@ -6,14 +6,3 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rocket = "0.5.0-rc.1"
-sqlx = {version = "0.5.10", features = ["postgres", "runtime-tokio-rustls"]}
-tokio = {version = "1.16.1", features = ["full"]}
-consensus-encode = { git = "https://github.com/NCrashed/consensus-encode", rev = "8c04d05aecc1d0f320fb1ebed0878772c1e83c72" }
-bitcoin =  { version = "^0.26", features = [ "rand" ] }
-bitcoin_hashes = "^0.9"
-bitcoin-utxo = { git = "https://github.com/hexresearch/bitcoin-utxo", branch = "debug" }
-tokio-stream = "0.1"
-tokio-util = { version = "0.6", features = [ "codec" ] }
-chrono = "^0.4"
-dashmap = "5.1"

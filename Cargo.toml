@@ -2,5 +2,6 @@
 
 members = [
     "bolt-server",
-    "bolt-shared"
+    "bolt-shared",
+    "bolt-db"
 ]

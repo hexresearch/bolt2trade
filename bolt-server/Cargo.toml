@@ -17,6 +17,8 @@ tokio-stream = "0.1"
 tokio-util = { version = "0.6", features = [ "codec" ] }
 chrono = "^0.4"
 dashmap = "5.1"
+bolt-shared = {path = "../bolt-shared"}
+bolt-db = {path = "../bolt-db"}
 
 [dependencies.rocket_dyn_templates]
 git = "https://github.com/SergioBenitez/Rocket"

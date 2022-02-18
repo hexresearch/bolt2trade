@@ -24,6 +24,7 @@ in stdenv.mkDerivation rec {
   export PGPORT=5435
   export LANG=C
   export LC_ALL=C
+  export DATABASE_URL=postgres://boltdb:boltdb@localhost/boltdb
   
   function cleanup {
     echo "Stopping DB..."
