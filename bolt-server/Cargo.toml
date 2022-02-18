@@ -6,7 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rocket = "0.5.0-rc.1"
+rocket = { git = "https://github.com/SergioBenitez/Rocket", rev = "31d06ee714c7cdab1911a8cb8fd5f9e148cc201f", features = [ "json" ] }
 sqlx = {version = "0.5.10", features = ["postgres", "runtime-tokio-rustls"]}
 tokio = {version = "1.16.1", features = ["full"]}
 consensus-encode = { git = "https://github.com/NCrashed/consensus-encode", rev = "8c04d05aecc1d0f320fb1ebed0878772c1e83c72" }
@@ -17,3 +17,8 @@ tokio-stream = "0.1"
 tokio-util = { version = "0.6", features = [ "codec" ] }
 chrono = "^0.4"
 dashmap = "5.1"
+
+[dependencies.rocket_dyn_templates]
+git = "https://github.com/SergioBenitez/Rocket"
+rev = "31d06ee714c7cdab1911a8cb8fd5f9e148cc201f"
+features = ["handlebars"]
