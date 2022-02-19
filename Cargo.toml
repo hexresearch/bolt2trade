@@ -3,5 +3,8 @@
 members = [
     "bolt-server",
     "bolt-shared",
-    "bolt-db"
+    "bolt-db",
+    "bolt-migrator"
 ]
+
+default-run = ["bolt-server"]

@@ -1,4 +1,4 @@
-create table test(
-    id integer primary key,
-    val text not null
+create table users(
+    user_id text primary key,
+    user_name text
 );
